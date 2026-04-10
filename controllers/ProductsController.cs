@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using xablau.Data;
@@ -22,16 +21,7 @@ public class ProductsController : ControllerBase
     public async Task<ActionResult<IEnumerable<ProductResponseDto>>> GetAll()
     {
         var products = await _context.Products
-            .Select(product => new ProductResponseDto
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Description = product.Description,
-                Price = product.Price,
-                ImageUrl = product.ImageUrl,
-                Stock = product.Stock,
-                CreatedAt = product.CreatedAt
-            })
+            .Select(product => ToResponse(product))
             .ToListAsync();
 
         return Ok(products);
@@ -53,8 +43,6 @@ public class ProductsController : ControllerBase
         return NoContent();
     }
 
-
-
     [HttpPost]
     public async Task<ActionResult<ProductResponseDto>> Create(CreateProductDto dto)
     {
@@ -72,20 +60,10 @@ public class ProductsController : ControllerBase
         _context.Products.Add(product);
         await _context.SaveChangesAsync();
 
-        var response = new ProductResponseDto
-        {
-            Id = product.Id,
-            Name = product.Name,
-            Description = product.Description,
-            Price = product.Price,
-            ImageUrl = product.ImageUrl,
-            Stock = product.Stock,
-            CreatedAt = product.CreatedAt
-        };
+        var response = ToResponse(product);
 
         return CreatedAtAction(nameof(GetById), new { id = product.Id }, response);
     }
-
 
     [HttpPut("{id}")]
     public async Task<ActionResult<ProductResponseDto>> Update(Guid id, CreateProductDto dto)
@@ -105,31 +83,25 @@ public class ProductsController : ControllerBase
 
         await _context.SaveChangesAsync();
 
-        var response = new ProductResponseDto
-        {
-            Id = product.Id,
-            Name = product.Name,
-            Description = product.Description,
-            Price = product.Price,
-            ImageUrl = product.ImageUrl,
-            Stock = product.Stock,
-            CreatedAt = product.CreatedAt
-        };
-
-        return Ok(response);
+        return Ok(ToResponse(product));
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductResponseDto>> GetById(Guid id)
     {
-            var product = await _context.Products.FindAsync(id);
-            if (product == null)
-            {
-                return NotFound("Produto não encontrado.");
-            }
-        
+        var product = await _context.Products.FindAsync(id);
 
-        var response = new ProductResponseDto
+        if (product == null)
+        {
+            return NotFound("Produto não encontrado.");
+        }
+
+        return Ok(ToResponse(product));
+    }
+
+    private static ProductResponseDto ToResponse(Product product)
+    {
+        return new ProductResponseDto
         {
             Id = product.Id,
             Name = product.Name,
@@ -139,9 +111,5 @@ public class ProductsController : ControllerBase
             Stock = product.Stock,
             CreatedAt = product.CreatedAt
         };
-
-        return Ok(response);
     }
-
-
 }

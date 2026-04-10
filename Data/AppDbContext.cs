@@ -11,4 +11,17 @@ public class AppDbContext : DbContext
 
     public DbSet<User> Users { get; set; } = null!;
     public DbSet<Product> Products { get; set; } = null!;
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasIndex(user => user.Email).IsUnique();
+
+            entity.Property(user => user.Role)
+                .HasConversion<string>();
+        });
+    }
 }
