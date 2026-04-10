@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using xablau.Models;
+using xablau.Entities;
 
 namespace xablau.Data;
 
