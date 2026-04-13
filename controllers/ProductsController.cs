@@ -22,6 +22,20 @@ public class ProductsController : ControllerBase
     public async Task<ActionResult<IEnumerable<ProductResponseDto>>> GetAll()
     {
         var products = await _context.Products
+            .Where(product => product.Stock > 0)
+            .OrderBy(product => product.Name)
+            .Select(product => ToResponse(product))
+            .ToListAsync();
+
+        return Ok(products);
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("admin")]
+    public async Task<ActionResult<IEnumerable<ProductResponseDto>>> GetAllForAdmin()
+    {
+        var products = await _context.Products
+            .OrderBy(product => product.Name)
             .Select(product => ToResponse(product))
             .ToListAsync();
 
