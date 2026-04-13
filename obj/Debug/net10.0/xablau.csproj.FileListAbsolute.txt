@@ -122,3 +122,12 @@
 /Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/BCrypt.Net-Next.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/otaviodasilvamachado/Desktop/xablau/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
