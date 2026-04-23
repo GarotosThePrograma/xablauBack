@@ -1,0 +1,17 @@
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Application.deps.json
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Application.dll
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Application.pdb
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Domain.dll
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Infrastructure.dll
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Infrastructure.pdb
+/home/pnb/xablauBack/xablauBack.Application/bin/Debug/net10.0/xablauBack.Domain.pdb
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.csproj.AssemblyReference.cache
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.AssemblyInfoInputs.cache
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.AssemblyInfo.cs
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.csproj.CoreCompileInputs.cache
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBa.CA6723FA.Up2Date
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.dll
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/refint/xablauBack.Application.dll
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/xablauBack.Application.pdb
+/home/pnb/xablauBack/xablauBack.Application/obj/Debug/net10.0/ref/xablauBack.Application.dll

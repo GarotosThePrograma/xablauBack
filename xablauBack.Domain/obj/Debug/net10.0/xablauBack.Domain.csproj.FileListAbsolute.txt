@@ -1,0 +1,11 @@
+/home/pnb/xablauBack/xablauBack.Domain/bin/Debug/net10.0/xablauBack.Domain.deps.json
+/home/pnb/xablauBack/xablauBack.Domain/bin/Debug/net10.0/xablauBack.Domain.dll
+/home/pnb/xablauBack/xablauBack.Domain/bin/Debug/net10.0/xablauBack.Domain.pdb
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.AssemblyInfoInputs.cache
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.AssemblyInfo.cs
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.csproj.CoreCompileInputs.cache
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.dll
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/refint/xablauBack.Domain.dll
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.pdb
+/home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/ref/xablauBack.Domain.dll

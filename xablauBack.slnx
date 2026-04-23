@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="xablauBack.API/xablauBack.API.csproj" />
+  <Project Path="xablauBack.Application/xablauBack.Application.csproj" />
+  <Project Path="xablauBack.Domain/xablauBack.Domain.csproj" />
+  <Project Path="xablauBack.Infrastructure/xablauBack.Infrastructure.csproj" />
+</Solution>
