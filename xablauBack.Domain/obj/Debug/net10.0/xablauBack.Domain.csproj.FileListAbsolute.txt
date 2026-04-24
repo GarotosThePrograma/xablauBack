@@ -9,3 +9,15 @@
 /home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/refint/xablauBack.Domain.dll
 /home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/xablauBack.Domain.pdb
 /home/pnb/xablauBack/xablauBack.Domain/obj/Debug/net10.0/ref/xablauBack.Domain.dll
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\bin\Debug\net10.0\xablauBack.Domain.deps.json
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\bin\Debug\net10.0\xablauBack.Domain.dll
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\bin\Debug\net10.0\xablauBack.Domain.pdb
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.AssemblyInfoInputs.cache
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.AssemblyInfo.cs
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.sourcelink.json
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.dll
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\refint\xablauBack.Domain.dll
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\xablauBack.Domain.pdb
+C:\Users\isson\Documents\Estudos\javascript\work-projects\xablauBack\xablauBack.Domain\obj\Debug\net10.0\ref\xablauBack.Domain.dll

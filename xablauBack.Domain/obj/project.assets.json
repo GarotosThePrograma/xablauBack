@@ -8,25 +8,24 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/home/pnb/.nuget/packages/": {}
+    "C:\\Users\\isson\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pnb/xablauBack/xablauBack.Domain/xablauBack.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Domain\\xablauBack.Domain.csproj",
       "projectName": "xablauBack.Domain",
-      "projectPath": "/home/pnb/xablauBack/xablauBack.Domain/xablauBack.Domain.csproj",
-      "packagesPath": "/home/pnb/.nuget/packages/",
-      "outputPath": "/home/pnb/xablauBack/xablauBack.Domain/obj/",
+      "projectPath": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Domain\\xablauBack.Domain.csproj",
+      "packagesPath": "C:\\Users\\isson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pnb/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\isson\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -45,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -66,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.106/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
