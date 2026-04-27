@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using xablauBack.Application.Contracts.Carrinho;
 using Microsoft.EntityFrameworkCore;
 using xablauBack.Infrastructure.Data;
 using xablauBack.Application.Contracts.Auth;
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IAuthService, AuthService>(); /* quando alguém pedir IAuthService entrega AuthService */
+builder.Services.AddScoped<ICarrinhoService, CarrinhoService>();
 builder.Services.AddControllers();
 
 // Add services to the container.
