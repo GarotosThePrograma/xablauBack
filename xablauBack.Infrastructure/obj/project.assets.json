@@ -2665,32 +2665,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\isson\\.nuget\\packages\\": {}
+    "/home/pnb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Infrastructure\\xablauBack.Infrastructure.csproj",
+      "projectUniqueName": "/home/pnb/xablauBack/xablauBack.Infrastructure/xablauBack.Infrastructure.csproj",
       "projectName": "xablauBack.Infrastructure",
-      "projectPath": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Infrastructure\\xablauBack.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\isson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Infrastructure\\obj\\",
+      "projectPath": "/home/pnb/xablauBack/xablauBack.Infrastructure/xablauBack.Infrastructure.csproj",
+      "packagesPath": "/home/pnb/.nuget/packages/",
+      "outputPath": "/home/pnb/xablauBack/xablauBack.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\isson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/pnb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Domain\\xablauBack.Domain.csproj": {
-              "projectPath": "C:\\Users\\isson\\Documents\\Estudos\\javascript\\work-projects\\xablauBack\\xablauBack.Domain\\xablauBack.Domain.csproj"
+            "/home/pnb/xablauBack/xablauBack.Domain/xablauBack.Domain.csproj": {
+              "projectPath": "/home/pnb/xablauBack/xablauBack.Domain/xablauBack.Domain.csproj"
             }
           }
         }
@@ -2705,7 +2706,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -2738,7 +2739,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.107/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

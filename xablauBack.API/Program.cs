@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using xablauBack.Infrastructure.Data;
+using xablauBack.Application.Contracts.Auth;
+using xablauBack.Application.Services.Auth; 
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IAuthService, AuthService>(); /* quando alguém pedir IAuthService entrega AuthService */
 builder.Services.AddControllers();
 
 // Add services to the container.
