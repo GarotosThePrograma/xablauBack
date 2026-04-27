@@ -22,6 +22,12 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Register([FromBody] RegisterRequest request)
     {
         var result = await _authService.RegisterAsync(request);
+        
+        if (!result.Sucesso)
+        {
+            return BadRequest(result);
+        }
+
         return Ok(result);
     }
 

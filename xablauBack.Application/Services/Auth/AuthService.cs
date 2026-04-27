@@ -110,6 +110,7 @@ public class AuthService : IAuthService
         {
             Sucesso = true,
             Mensagem = "Login realizado com sucesso",
+            UsuarioId = usuario.Id, /* precisa disso pra depois buscar o carrinho que tem o mesmo id para a relação */
             Nome = usuario.Nome,
             Email = usuario.Email
         };
