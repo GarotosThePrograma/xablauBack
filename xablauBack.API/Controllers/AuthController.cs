@@ -24,5 +24,18 @@ public class AuthController : ControllerBase
         var result = await _authService.RegisterAsync(request);
         return Ok(result);
     }
+
+    [HttpPost("login")] /* cria a rota "POST /api/auth/login" */
+    public async Task<IActionResult> Login([FromBody] LoginRequest request) /* [FromBody] transforma o JSON do corpo da req em um onj C# */
+    {
+        var result = await _authService.LoginAsync(request); /* chama a regra de negocio do login */
+
+        if (!result.Sucesso)
+        {
+            return BadRequest(result); /* retorna um 400 se a senha ou email estiverem errados */
+        }
+
+        return Ok(result); /* se tiver certo retorna 200 */
+    }
 }
 

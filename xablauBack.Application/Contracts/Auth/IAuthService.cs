@@ -4,6 +4,7 @@ namespace xablauBack.Application.Contracts.Auth;
 public interface IAuthService
 {
     Task<RegisterResult> RegisterAsync (RegisterRequest request);
+    Task<LoginResult> LoginAsync (LoginRequest request);
 }
 /* define que todo servico de autenticacao precisa ter um RegisterAsync */
 
