@@ -45,4 +45,48 @@ public class CarrinhoService : ICarrinhoService
 
         return response;
     }
+
+    public async Task<CarrinhoResponse?> AdicionarItemAsync(int usuarioId, AdicionarItemCarrinhoRequest request)
+    {
+        if (request.Quantidade <= 0) /* bloqueia quantidade inválida */
+        {
+            return null;
+        }
+
+        var carrinho = await _context.Carrinhos
+            .Include(carrinho => carrinho.Itens) /* busca o carrinho com os itens que ele já tem */
+            .FirstOrDefaultAsync(carrinho => carrinho.UsuarioId == usuarioId); /* confere se bate com o usuário */
+        
+        var produto = await _context.Produtos
+            .FirstOrDefaultAsync(produto => produto.Id == request.ProdutoId);
+
+        if (produto is null)
+        {
+            return null;
+        }
+
+        /* verifica se o produto já está no carrinho, se não existe cria novo, se já existe soma */
+        var itemExistente = carrinho.Itens
+            .FirstOrDefault(itemExistente => itemExistente.ProdutoId == request.ProdutoId);
+
+        if (itemExistente is null)
+        {
+            var novoItem = new ItemCarrinho
+            {
+                CarrinhoId = carrinho.Id,
+                ProdutoId = produto.Id,
+                Quantidade = request.Quantidade
+            };
+
+            _context.ItensCarrinho.Add(novoItem);
+        }
+        else
+        {
+            itemExistente.Quantidade += request.Quantidade;
+        }
+
+        await _context.SaveChangesAsync();
+
+        return await ObterCarrinhoPorUsuarioAsync(usuarioId); /* retorna carrinho atualizado */
+    }   
 }
