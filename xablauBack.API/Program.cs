@@ -19,6 +19,16 @@ builder.Services.AddControllers();
 // Add services to the container.
 builder.Services.AddOpenApi();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 using(var scope = app.Services.CreateScope())
@@ -34,8 +44,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// 2. CORREÇÃO: Adicionando o mapeamento dos Controllers na pipeline
+app.UseCors("Frontend");
 app.MapControllers();
 
 var summaries = new[]
