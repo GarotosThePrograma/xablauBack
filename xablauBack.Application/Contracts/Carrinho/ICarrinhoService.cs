@@ -6,4 +6,6 @@ public interface ICarrinhoService
     Task<CarrinhoResponse?> AdicionarItemAsync(int usuarioId, AdicionarItemCarrinhoRequest request);
     Task<CarrinhoResponse?> RemoverItemAsync(int usuarioId, int produtoId);
     Task<CarrinhoResponse?> AtualizarQuantidadeAsync(int usuarioId, int produtoId, AtualizarQuantidadeItemRequest request);
+    Task<CarrinhoResponse?> LimparCarrinhoAsync(int usuarioId);
+
 }

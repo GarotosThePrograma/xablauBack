@@ -53,6 +53,21 @@ public class CarrinhoController : ControllerBase
         return Ok(carrinho);
     }
 
+    /* tira tudo do carrinho */
+    [HttpDelete("{usuarioId:int}/itens")]
+    public async Task<IActionResult> LimparCarrinho(int usuarioId)
+    {
+        var carrinho = await _carrinhoService.LimparCarrinhoAsync(usuarioId);
+
+        if (carrinho is null)
+        {
+            return NotFound("Carrinho não encontrado");
+        }
+
+        return Ok(carrinho);
+    }
+
+
     /* PUT(UPDATE) /api/carrinho/{id do usuário}/itens/{id do item do usuário} */
     [HttpPut("{usuarioId:int}/itens/{produtoId:int}")]
     public async Task<IActionResult> AtualizarQuantidade(int usuarioId, int produtoId, [FromBody] AtualizarQuantidadeItemRequest request)

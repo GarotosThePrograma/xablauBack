@@ -154,4 +154,24 @@ public class CarrinhoService : ICarrinhoService
 
         return await ObterCarrinhoPorUsuarioAsync(usuarioId);
     }
+
+    /* tira todos itens do carrinho */
+    public async Task<CarrinhoResponse?> LimparCarrinhoAsync(int usuarioId)
+    {
+        var carrinho = await _context.Carrinhos
+            .Include(carrinho => carrinho.Itens)
+            .FirstOrDefaultAsync(carrinho => carrinho.UsuarioId == usuarioId);
+
+        if (carrinho is null)
+        {
+            return null;
+        }
+
+        _context.ItensCarrinho.RemoveRange(carrinho.Itens); /* tipo um for de remoção de itens */
+
+        await _context.SaveChangesAsync();
+
+        return await ObterCarrinhoPorUsuarioAsync(usuarioId);
+    }
+
 }
