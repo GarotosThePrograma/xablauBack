@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using xablauBack.Application.Contracts.Carrinho;
+using xablauBack.Application.Services.Carrinho;
 using Microsoft.EntityFrameworkCore;
 using xablauBack.Infrastructure.Data;
 using xablauBack.Application.Contracts.Auth;

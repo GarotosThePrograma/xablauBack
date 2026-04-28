@@ -64,7 +64,7 @@ public class AuthService : IAuthService
             SenhaHash = CriarSenhaHash(request.Senha),
         };
 
-        var carrinho = new Carrinho
+        var carrinho = new xablauBack.Domain.Entities.Carrinho /* pega o carrinho do domain (pra não confudir o C#) */
         {
             Usuario = usuario /* este carrinho pertence a esse usuário */
         };

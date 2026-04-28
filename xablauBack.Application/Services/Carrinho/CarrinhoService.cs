@@ -3,7 +3,7 @@ using xablauBack.Application.Contracts.Carrinho;
 using xablauBack.Domain.Entities;
 using xablauBack.Infrastructure.Data;
 
-namespace xablauBack.Infrastructure.Data;
+namespace xablauBack.Application.Services.Carrinho;
 
 public class CarrinhoService : ICarrinhoService
 {

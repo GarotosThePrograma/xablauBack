@@ -4,7 +4,7 @@ using xablauBack.Application.Contracts.Carrinho;
 namespace xablauBack.API.Controller;
 
 [ApiController]
-[Route("api/controller")] /* /api/carrinho */
+[Route("api/[controller]")] /* /api/carrinho */
 public class CarrinhoController : ControllerBase
 {
     private readonly ICarrinhoService _carrinhoService;
