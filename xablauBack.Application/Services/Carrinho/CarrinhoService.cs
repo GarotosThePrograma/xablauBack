@@ -56,6 +56,11 @@ public class CarrinhoService : ICarrinhoService
         var carrinho = await _context.Carrinhos
             .Include(carrinho => carrinho.Itens) /* busca o carrinho com os itens que ele já tem */
             .FirstOrDefaultAsync(carrinho => carrinho.UsuarioId == usuarioId); /* confere se bate com o usuário */
+
+        if (carrinho is null)
+        {
+            return null;
+        }
         
         var produto = await _context.Produtos
             .FirstOrDefaultAsync(produto => produto.Id == request.ProdutoId);

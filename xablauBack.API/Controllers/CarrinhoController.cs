@@ -26,4 +26,17 @@ public class CarrinhoController : ControllerBase
 
         return Ok(carrinho); /* se achar 200 */
     }
+
+    [HttpPost("{usuarioId:int}/itens")] /* POST /api/carrinho/1/itens */
+    public async Task<IActionResult> AdicionarItem(int usuarioId, [FromBody] AdicionarItemCarrinhoRequest request)
+    {
+    var carrinho = await _carrinhoService.AdicionarItemAsync(usuarioId, request);
+
+    if (carrinho is null)
+    {
+        return BadRequest("Não foi possível adicionar o item ao carrinho");
+    }
+
+    return Ok(carrinho);
+    }
 }
