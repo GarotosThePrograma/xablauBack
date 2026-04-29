@@ -7,7 +7,7 @@ namespace xablauBack.API.Controllers;
 [Route("api/[controller]")]
 
 /* base para controllers */
-public class AuthController : ControllerBase
+public class AuthController : ControllerBase /* recebe rotas de autenticação */
 {
     /* logica de cadastro */
     private readonly IAuthService _authService;

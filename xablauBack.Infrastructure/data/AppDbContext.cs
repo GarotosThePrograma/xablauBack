@@ -3,7 +3,7 @@ using xablauBack.Domain.Entities;
 
 namespace xablauBack.Infrastructure.Data{
 
-    public class AppDbContext : DbContext
+    public class AppDbContext : DbContext /* ponte do backend com o banco */
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 

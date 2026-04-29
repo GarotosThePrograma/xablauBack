@@ -5,7 +5,7 @@ namespace xablauBack.API.Controller;
 
 [ApiController]
 [Route("api/[controller]")] /* /api/carrinho */
-public class CarrinhoController : ControllerBase
+public class CarrinhoController : ControllerBase /* rotas do carrinho, CRUD */
 {
     private readonly ICarrinhoService _carrinhoService;
 

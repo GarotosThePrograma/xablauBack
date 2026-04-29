@@ -5,7 +5,7 @@ using xablauBack.Infrastructure.Data;
 
 namespace xablauBack.Application.Services.Carrinho;
 
-public class CarrinhoService : ICarrinhoService
+public class CarrinhoService : ICarrinhoService /* regras de negócio do carrinho */
 {
     private readonly AppDbContext _context;
 

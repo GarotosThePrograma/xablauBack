@@ -2,7 +2,7 @@ using xablauBack.Domain.Entities;
 
 namespace xablauBack.Infrastructure.Data;
 
-public static class DbSeeder
+public static class DbSeeder /* se tiver produtos ele insere, se nao pega os do frontend */
 {
     public static async Task SeedProdutosAsync(AppDbContext context)
     {

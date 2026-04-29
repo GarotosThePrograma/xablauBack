@@ -6,7 +6,7 @@ namespace xablauBack.API.Controllers;
 
 [ApiController]
 [Route("api/produtos")]
-public class ProdutosController : ControllerBase
+public class ProdutosController : ControllerBase /* lista os produtos para o front exibir */
 {
     private readonly AppDbContext _context;
 

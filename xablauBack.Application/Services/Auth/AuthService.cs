@@ -7,7 +7,7 @@ using xablauBack.Infrastructure.Data;
 
 namespace xablauBack.Application.Services.Auth;
 
-public class AuthService : IAuthService
+public class AuthService : IAuthService /* valida tudo conforme as regras de negócio */
 {
     private readonly AppDbContext _context; /* variavel privada */
 

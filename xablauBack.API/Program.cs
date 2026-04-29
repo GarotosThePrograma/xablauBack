@@ -6,7 +6,7 @@ using xablauBack.Infrastructure.Data;
 using xablauBack.Application.Contracts.Auth;
 using xablauBack.Application.Services.Auth; 
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args); /* liga tudo */
 
 // 1. CORREÇÃO: Nome da classe do contexto alterado para AppDbContext
 builder.Services.AddDbContext<AppDbContext>(options => 
